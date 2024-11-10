@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color:rgb(86, 130, 109);
+      }
+    
+      .background {
+        margin:0px;
+        padding:0px;
+        display:flex;
+        z-index:0;
+      }
+      
+      .tile-container {
+        width:54px;
+        height:54px;
+        position:relative;
+      }
+    
+      .grout {
+        height:54px;
+        aspect-ratio:1;
+        position:absolute;
+        clip-path:polygon(0% 50%, 14.14% 35%, 14.14% 14.14%, 35% 14.14%, 50% 0%, 65% 14.14%, 85.86% 14.14%, 85.86% 35%, 100% 50%, 85.86% 65%, 85.86% 85.86%, 65% 85.86%, 50% 100%, 35% 85.86%, 14.14% 85.86%, 14.14% 65%);
+        background-color:rgb(186, 186, 173);
+        z-index:2;
+      }
+      
+      .cross {
+        position:absolute;
+        background-color:rgb(86, 130, 109);
+        height:54px;
+        width:54px;
+        margin-left:27px;
+        margin-top:27px;
+        z-index:1;
+      }
+      
+      .star {
+        content:'';
+        height:50px;
+        margin:2px;
+        aspect-ratio:1;
+        clip-path:polygon(0% 50%, 14.14% 35%, 14.14% 14.14%, 35% 14.14%, 50% 0%, 65% 14.14%, 85.86% 14.14%, 85.86% 35%, 100% 50%, 85.86% 65%, 85.86% 85.86%, 65% 85.86%, 50% 100%, 35% 85.86%, 14.14% 85.86%, 14.14% 65%);
+        background-color:rgb(86, 130, 109);
+        display:block;
+        position:absolute;
+        z-index:3;
+      }
+    </style>
+    
+    <script>
+      const white = "rgb(240, 240, 233)"
+      const green = "rgb(86, 130, 109)"
+      const changeColor = elem => {
+        color = getComputedStyle(elem)["background-color"]
+        if (color === green) {
+          elem.style.backgroundColor = white
+        } else {
+          elem.style.backgroundColor = green
+        }
+      }
+    </script>
+  </head>
+  
+  <body>
+    <div class="background">
+      <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+      <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+    </div>
+
+    <div class="background">
+      <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+      <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+    </div>
+
+    <div class="background">
+      <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+      <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+    </div>
+
+    <div class="background">
+      <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+      <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+    </div>
+
+    <div class="background">
+      <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+      <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+    </div>
+
+    <div class="background">
+      <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+      <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+    </div>
+
+    <div class="background">
+      <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+      <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+    </div>
+
+    <div class="background">
+      <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+      <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+    </div>
+
+    <div class="background">
+      <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+      <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+    </div>
+
+    <div class="background">
+      <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+      <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+    </div>
+
+    <div class="background">
+      <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+      <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+    </div>
+
+    <div class="background">
+      <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+      <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+        <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+       <div class="tile-container">
+        <div class="grout"></div>
+        <div class="star" onclick="changeColor(this)"></div>
+        <div class="cross" onclick="changeColor(this)"></div>
+      </div>
+    </div>
+  </body>
+</html>
